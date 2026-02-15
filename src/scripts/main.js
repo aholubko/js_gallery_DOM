@@ -21,13 +21,13 @@ function changeImages() {
 
     e.preventDefault();
 
-    const newSrc = link.href;
+    const newSrc = link.getAttribute('href');
 
     if (!newSrc) {
       return;
     }
 
-    largeImage.setAttribute('src', newSrc);
+    largeImage.src = newSrc;
   });
 }
 
